@@ -1,0 +1,41 @@
+{% load static %}
+<!--Alunos: Luiz Philippe de Lima Silva, Miguel Barbosa Neto e Manoel Fernando Cavalcante Cruz, Atividade (ATV09) e Turma (513)-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{% static 'portal/img/icon.png' %}" type="image/x-icon">
+    <title>Portal Acadêmico do Trio - ATV09</title>
+    <link rel="stylesheet" href="{% static 'portal/css/style.css' %}">
+</head>
+<body>
+
+<header>
+    <h1>Portal Acadêmico do Trio</h1>
+</header>
+
+<main class="container-principal">
+    <nav>
+        <h1 class="titulo-menu">Navegação</h1>
+        {% for item in menu_itens %}
+            {% if item.tipo_destino == 'interno' and item.conteudo %}
+                <a class="botao-nav" href="{% url 'exibir_conteudo' item.conteudo.slug %}">{{ item.titulo }}</a>
+            {% elif item.tipo_destino == 'externo' and item.url_externa %}
+                <a class="botao-nav" href="{{ item.url_externa }}" target="_blank" rel="noopener noreferrer">{{ item.titulo }}</a>
+        {% endif %}
+        {% endfor %}
+    </nav>
+
+    <section id="conteudo">
+        {% block content %}
+        {% endblock %}
+    </section>
+</main>
+
+<footer>
+    <p>Atividade 9 - Migração do Portal para Django</p>
+</footer>
+
+</body>
+</html>

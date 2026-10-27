@@ -1,0 +1,12 @@
+{% extends 'portal/base.html' %}
+
+{% block content %}
+    {% if conteudo %}
+        {{ conteudo.conteudo_html|safe }}
+    {% else %}
+        <article class="cartao-conteudo">
+            <h2>Bem-vindos ao Nosso Portal</h2>
+            <p>Portal estruturado com HTML5 e Django.</p>
+        </article>
+    {% endif %}
+{% endblock %}
