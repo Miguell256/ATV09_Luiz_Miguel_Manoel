@@ -1,0 +1,58 @@
+/* Luiz Philippe de Lima Silva, Miguel Barbosa Neto, Manoel Fernando Cavalcante Cruz, ATV09, Turma 513 */
+
+body { margin: 0; font-family: sans-serif; display: flex; flex-direction: column; min-height: 100vh; }
+
+/* container-principal: utiliza display flex para criar um layout de colunas horizontal em telas maiores */
+.container-principal {
+    display: flex;
+    flex: 1;
+}
+
+header, footer { background-color: #0e0e39; color: white; text-align: center; padding: 20px; }
+
+/* tag <nav>: define a área de navegação semântica, ocupando 25% da largura em desktop */
+nav { width: 25%; background-color: rgb(3, 15, 74); color: white; padding: 10px; }
+
+/* .botao-nav: o display block faz os itens ficarem empilhados.
+   Agora são links <a>, então text-decoration e font mantêm a aparência dos antigos <button> */
+.botao-nav {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: left;
+    box-sizing: border-box;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    font: 13.3333px Arial, sans-serif;
+}
+
+/* tag <section> (conteudo): área onde o conteúdo vindo do banco é exibido, ocupando 75% da largura */
+#conteudo { width: 75%; padding: 20px; }
+
+/* Imagens responsivas: garante que o conteúdo visual não exceda as margens do layout pai */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.perfil-foto { width: 140px; height: 140px; object-fit: cover; }
+
+/* Media Query: Ponto de interrupção em 768px para adaptar layout para celulares */
+
+@media (max-width: 768px) {
+    /* Alteramos o fluxo do flexbox para coluna, fazendo com que o nav e main se empilhem */
+    .container-principal {
+        flex-direction: column;
+    }
+    /* Ambos passam a ocupar 100% da largura para eliminar as colunas laterais */
+    nav, #conteudo {
+        width: 100%;
+    }
+}
+
+.cartao-conteudo { background: #f9f9f9; padding: 20px; border-radius: 8px; border: 1px solid #ccc; }
