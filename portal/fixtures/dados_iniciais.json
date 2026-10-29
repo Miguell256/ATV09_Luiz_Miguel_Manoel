@@ -1,0 +1,180 @@
+[
+{
+  "model": "portal.conteudo",
+  "pk": 1,
+  "fields": {
+    "titulo": "Página Inicial",
+    "slug": "inicio",
+    "conteudo_html": "<article class=\"cartao-conteudo\">\r\n    <h2>Bem-vindos ao Nosso Portal</h2>\r\n    <p>Portal estruturado com HTML5 e Flexbox, migrado para Django.</p>\r\n</article>",
+    "ativo": true
+  }
+},
+{
+  "model": "portal.conteudo",
+  "pk": 2,
+  "fields": {
+    "titulo": "Currículo - Luiz",
+    "slug": "curriculo-luiz",
+    "conteudo_html": "<article class=\"cartao-conteudo\">\r\n    <div class=\"perfil-cabecalho\">\r\n        <img class=\"perfil-foto\" src=\"/static/portal/img/luiz.jpeg\" alt=\"Foto do currículo\" title=\"Homi do Excel\">\r\n        <div class=\"perfil-dados\">\r\n            <h2 class=\"perfil-titulo\">Luiz Philippe de Lima Silva</h2>\r\n            <p class=\"secao-conteudo\"><strong>Especialista em Suíte Office &amp; Design Digital</strong></p>\r\n            <p class=\"secao-conteudo\">Desenvolvedor de jogos interativos no PowerPoint</p>\r\n        </div>\r\n    </div>\r\n    <div class=\"limpar-float\"></div>\r\n    <hr>\r\n    <h3 class=\"secao-titulo\">Perfil Profissional</h3>\r\n    <p class=\"secao-conteudo\">Especialista em <strong>Excel, Word e PowerPoint</strong>, com ampla experiência na criação de planilhas profissionais, documentos formatados e apresentações de alto impacto. <strong>Desenvolvedor de jogos interativos no PowerPoint</strong>, utilizando recursos avançados da ferramenta para criar experiências dinâmicas e criativas. Profissional especializado na criação de templates de apresentações modernas, organizadas e responsivas, focadas em comunicação visual eficiente e design atrativo.</p>\r\n    <h3 class=\"secao-titulo\">Qualificações</h3>\r\n    <p class=\"secao-conteudo\">Ampla experiência na criação de planilhas profissionais, documentos e apresentações de alto impacto. Desenvolvedor de jogos interativos e templates modernos em PowerPoint, utilizando recursos avançados para proporcionar experiências dinâmicas e comunicação visual eficiente, sempre com foco em criatividade e produtividade.</p>\r\n    <h3 class=\"secao-titulo\">Cursos Complementares</h3>\r\n    <p class=\"secao-conteudo\">Qualificação presencial na escola de informática <strong>Twister</strong>.</p>\r\n    <p class=\"secao-conteudo\">Especializações realizadas através das plataformas de ensino online <strong>Mundi Cursos</strong> e <strong>EVG (Escola Virtual.Gov)</strong>.</p>\r\n</article>",
+    "ativo": true
+  }
+},
+{
+  "model": "portal.conteudo",
+  "pk": 3,
+  "fields": {
+    "titulo": "Tema Livre - Luiz",
+    "slug": "tema-luiz",
+    "conteudo_html": "<article class=\"cartao-conteudo\">\r\n    <div class=\"perfil-cabecalho\">\r\n        <img class=\"perfil-foto\" src=\"/static/portal/img/pp.jpeg\" alt=\"Capa do Tema Livre\" title=\"Jogos no PowerPoint\">\r\n        <div class=\"perfil-dados\">\r\n            <h2 class=\"perfil-titulo\">Guia Avançado de Desenvolvimento de Jogos no PPT</h2>\r\n            <p class=\"secao-conteudo\">Tema: Interatividade e Lógica em Ferramentas de Apresentação</p>\r\n            <p class=\"secao-conteudo\">Autor: Luiz Philippe</p>\r\n        </div>\r\n    </div>\r\n    <div class=\"limpar-float\"></div>\r\n    <hr>\r\n    <h3 class=\"secao-titulo\">Introdução</h3>\r\n    <p class=\"secao-conteudo\">A criação de jogos no PowerPoint baseia-se na transformação de uma ferramenta de apresentação linear em um ambiente interativo e lógico. Para desenvolver um projeto robusto, siga estas etapas fundamentais:</p>\r\n    <h3 class=\"secao-titulo\">Mecânicas e Etapas Fundamentais</h3>\r\n    <p class=\"secao-conteudo\"><strong>Navegação Não Linear e Hiperlinks:</strong> O núcleo de qualquer jogo no PPT é o sistema de navegação. Utilize Hiperlinks (Ctrl+K) em formas, imagens ou textos para direcionar o jogador a slides específicos (como telas de \"Fase Concluída\", \"Game Over\" ou ramificações da história). Isso permite que o usuário explore o ambiente em vez de apenas seguir uma sequência de slides.</p>\r\n    <p class=\"secao-conteudo\"><strong>Controle de Fluxo e Segurança do Design:</strong> Para evitar que o jogo avance acidentalmente, é obrigatório ir até a guia Transições e desmarcar a opção \"Ao Clicar com o Mouse\". Isso \"tranca\" o slide, forçando o jogador a interagir exclusivamente com os botões e elementos que você programou.</p>\r\n    <p class=\"secao-conteudo\"><strong>Mecânicas de Causa e Efeito com Gatilhos (Triggers):</strong> Utilize os Gatilhos localizados no painel de \"Animação Avançada\". Eles permitem que uma animação (como o surgimento de uma chave ou a explosão de um obstáculo) só aconteça quando um objeto específico for clicado. Isso é essencial para criar quebra-cabeças e menus interativos.</p>\r\n    <p class=\"secao-conteudo\"><strong>Ocultação de Elementos e Lógica de Estado:</strong> Use o Painel de Seleção (Página Inicial &gt; Selecionar &gt; Painel de Seleção) para nomear cada objeto (ex: \"Botão_Ataque\", \"Inimigo_01\"). Isso facilita a organização de camadas e permite que você crie lógicas onde objetos aparecem ou desaparecem conforme a interação do jogador, simulando uma mudança de estado no jogo.</p>\r\n    <p class=\"secao-conteudo\"><strong>Feedback Visual e Sonoro:</strong> Implemente animações de \"Ênfase\" para dar feedback imediato quando o jogador interagir com algo. Combine essas animações com a inserção de efeitos sonoros curtos nas configurações de animação para aumentar a imersão e indicar claramente acertos ou erros.</p>\r\n    <p class=\"secao-conteudo\"><strong>Uso de Slides Mestres para Interface (UI):</strong> Para manter elementos constantes, como barras de vida, inventários ou botões de \"Sair\", configure-os no Slide Mestre. Isso garante que a interface do usuário seja replicada em todos os slides do jogo com precisão e economia de tempo no design.</p>\r\n</article>",
+    "ativo": true
+  }
+},
+{
+  "model": "portal.conteudo",
+  "pk": 4,
+  "fields": {
+    "titulo": "Currículo - Miguel",
+    "slug": "curriculo-miguel",
+    "conteudo_html": "<article class=\"cartao-conteudo\">\r\n    <div class=\"perfil-cabecalho\">\r\n        <img class=\"perfil-foto\" src=\"/static/portal/img/perfil.jpg\" alt=\"Foto de perfil\" title=\"Mininu lindju!\">\r\n        <div class=\"perfil-dados\">\r\n            <h2 class=\"perfil-titulo\">Miguel Barbosa Neto</h2>\r\n            <p class=\"secao-conteudo\">(82) 9633-7979</p>\r\n            <p class=\"secao-conteudo\">miguel.barbos.aneto366@gmail.com</p>\r\n            <p class=\"secao-conteudo\">Palmeira dos Índios - AL</p>\r\n        </div>\r\n    </div>\r\n    <div class=\"limpar-float\"></div>\r\n    <hr>\r\n    <h3 class=\"secao-titulo\">Objetivo</h3>\r\n    <p class=\"secao-conteudo\">Atuar na vaga de exterminador de dinossauros, com foco no abate limpo de carnívoros de grande porte</p>\r\n    <h3 class=\"secao-titulo\">Formação</h3>\r\n    <p class=\"secao-conteudo\">Ensino Médio Incompleto - IFAL</p>\r\n    <h3 class=\"secao-titulo\">Experiência</h3>\r\n    <p class=\"secao-conteudo\">Ajudante de pedreiro</p>\r\n    <p class=\"secao-conteudo\">Ultimo lugar do campeonato de facada</p>\r\n    <p class=\"secao-conteudo\">Empacotador do Avant</p>\r\n    <h3 class=\"secao-titulo\">Habilidades</h3>\r\n    <p class=\"secao-conteudo\">Iniciante em Programação Web</p>\r\n    <p class=\"secao-conteudo\">Sei fritar ovo sem grudar na frigideira</p>\r\n    <p class=\"secao-conteudo\">Trabalho em equipe</p>\r\n</article>",
+    "ativo": true
+  }
+},
+{
+  "model": "portal.conteudo",
+  "pk": 5,
+  "fields": {
+    "titulo": "Tema Livre - Miguel",
+    "slug": "tema-livre-miguel",
+    "conteudo_html": "<article class=\"cartao-conteudo\">\r\n    <div class=\"perfil-cabecalho\">\r\n        <img class=\"perfil-foto\" src=\"/static/portal/img/linkinpark.jpg\" alt=\"Foto da banda\" title=\"Hybrid Theory Era\">\r\n        <div class=\"perfil-dados\">\r\n            <h2 class=\"perfil-titulo\">Banda Linkin Park</h2>\r\n            <p class=\"secao-conteudo\">Gênero: Nu Metal / Rock</p>\r\n            <p class=\"secao-conteudo\">Origem: Agoura Hills, Califórnia</p>\r\n            <p class=\"secao-conteudo\">Ano de Formação: 1996</p>\r\n        </div>\r\n    </div>\r\n    <div class=\"limpar-float\"></div>\r\n    <hr>\r\n    <h3 class=\"secao-titulo\">História</h3>\r\n    <p class=\"secao-conteudo\">Banda americana que definiu o gênero Nu Metal nos anos 2000 com álbuns como Hybrid Theory e Meteora.</p>\r\n    <h3 class=\"secao-titulo\">Formação Atual</h3>\r\n    <p class=\"secao-conteudo\">Mike Shinoda, Brad Delson, Dave Farrell, Joe Hahn e Emily Armstrong.</p>\r\n    <h3 class=\"secao-titulo\">Principais Sucessos</h3>\r\n    <p class=\"secao-conteudo\">In the End</p>\r\n    <p class=\"secao-conteudo\">Numb</p>\r\n    <p class=\"secao-conteudo\">Crawling</p>\r\n    <h3 class=\"secao-titulo\">Novidades</h3>\r\n    <p class=\"secao-conteudo\">A banda retornou recentemente em 2024 com novos projetos e vocalista.</p>\r\n</article>",
+    "ativo": true
+  }
+},
+{
+  "model": "portal.conteudo",
+  "pk": 6,
+  "fields": {
+    "titulo": "Currículo - Manoel",
+    "slug": "curriculo-manoel",
+    "conteudo_html": "<article class=\"cartao-conteudo\">\r\n    <div class=\"perfil-cabecalho\">\r\n        <img class=\"perfil-foto\" src=\"/static/portal/img/Nando.jpg\" alt=\"Foto de Manoel Fernando\" title=\"Poia\">\r\n        <div class=\"perfil-dados\">\r\n            <h2 class=\"perfil-titulo\">Manoel Fernando Cavalcante Cruz</h2>\r\n            <p class=\"secao-conteudo\">Estudante da turma 523.</p>\r\n        </div>\r\n    </div>\r\n    <div class=\"limpar-float\"></div>\r\n    <hr>\r\n    <h3 class=\"secao-titulo\">Habilidades</h3>\r\n    <p class=\"secao-conteudo\">- Jogador de LoL</p>\r\n    <p class=\"secao-conteudo\">- Jogador de vôlei</p>\r\n    <p class=\"secao-conteudo\">- Faz miojo</p>\r\n    <p class=\"secao-conteudo\">- Já fez um pentakill</p>\r\n    <h3 class=\"secao-titulo\">Objetivos</h3>\r\n    <p class=\"secao-conteudo\">- Melhorar de vida profissionalmente</p>\r\n    <p class=\"secao-conteudo\">- Conseguir um bom emprego no futuro</p>\r\n</article>",
+    "ativo": true
+  }
+},
+{
+  "model": "portal.conteudo",
+  "pk": 7,
+  "fields": {
+    "titulo": "Tema Livre - Manoel",
+    "slug": "tema-livre-manoel",
+    "conteudo_html": "<article class=\"cartao-conteudo\">\r\n    <div class=\"perfil-cabecalho\">\r\n        <img class=\"perfil-foto\" src=\"/static/portal/img/Leon.jpg\" alt=\"Imagem de Leon S. Kennedy\" title=\"Leon S. Kennedy\">\r\n        <div class=\"perfil-dados\">\r\n            <h2 class=\"perfil-titulo\">Leon S. Kennedy</h2>\r\n            <p class=\"secao-conteudo\">Personagem da série Resident Evil.</p>\r\n        </div>\r\n    </div>\r\n    <div class=\"limpar-float\"></div>\r\n    <hr>\r\n    <h3 class=\"secao-titulo\">Habilidades</h3>\r\n    <p class=\"secao-conteudo\">- Militar treinado</p>\r\n    <p class=\"secao-conteudo\">- Experiente em missões perigosas</p>\r\n    <p class=\"secao-conteudo\">- Habilidade com armas</p>\r\n    <p class=\"secao-conteudo\">- Corajoso e determinado</p>\r\n    <h3 class=\"secao-titulo\">Objetivos</h3>\r\n    <p class=\"secao-conteudo\">- Salvar pessoas em situações de perigo</p>\r\n    <p class=\"secao-conteudo\">- Combater ameaças biológicas</p>\r\n</article>",
+    "ativo": true
+  }
+},
+{
+  "model": "portal.menu",
+  "pk": 1,
+  "fields": {
+    "titulo": "Página Inicial",
+    "tipo_destino": "interno",
+    "ordem": 1,
+    "ativo": true,
+    "conteudo": 1,
+    "url_externa": null
+  }
+},
+{
+  "model": "portal.menu",
+  "pk": 2,
+  "fields": {
+    "titulo": "Currículo - Luiz",
+    "tipo_destino": "interno",
+    "ordem": 2,
+    "ativo": true,
+    "conteudo": 2,
+    "url_externa": null
+  }
+},
+{
+  "model": "portal.menu",
+  "pk": 3,
+  "fields": {
+    "titulo": "Tema Livre - Luiz",
+    "tipo_destino": "interno",
+    "ordem": 3,
+    "ativo": true,
+    "conteudo": 3,
+    "url_externa": null
+  }
+},
+{
+  "model": "portal.menu",
+  "pk": 4,
+  "fields": {
+    "titulo": "Currículo - Miguel",
+    "tipo_destino": "interno",
+    "ordem": 4,
+    "ativo": true,
+    "conteudo": 4,
+    "url_externa": null
+  }
+},
+{
+  "model": "portal.menu",
+  "pk": 5,
+  "fields": {
+    "titulo": "Tema Livre - Miguel",
+    "tipo_destino": "interno",
+    "ordem": 5,
+    "ativo": true,
+    "conteudo": 5,
+    "url_externa": null
+  }
+},
+{
+  "model": "portal.menu",
+  "pk": 6,
+  "fields": {
+    "titulo": "Currículo - Manoel",
+    "tipo_destino": "interno",
+    "ordem": 6,
+    "ativo": true,
+    "conteudo": 6,
+    "url_externa": null
+  }
+},
+{
+  "model": "portal.menu",
+  "pk": 7,
+  "fields": {
+    "titulo": "Tema Livre - Manoel",
+    "tipo_destino": "interno",
+    "ordem": 7,
+    "ativo": true,
+    "conteudo": 7,
+    "url_externa": null
+  }
+},
+{
+  "model": "portal.menu",
+  "pk": 8,
+  "fields": {
+    "titulo": "GitHub",
+    "tipo_destino": "externo",
+    "ordem": 8,
+    "ativo": true,
+    "conteudo": null,
+    "url_externa": "https://github.com"
+  }
+},
+{
+  "model": "portal.menu",
+  "pk": 9,
+  "fields": {
+    "titulo": "W3Schools",
+    "tipo_destino": "externo",
+    "ordem": 9,
+    "ativo": true,
+    "conteudo": null,
+    "url_externa": "https://www.w3schools.com"
+  }
+}
+]
